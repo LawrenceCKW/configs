@@ -1,0 +1,15 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:localhost}:${DB_PORT:5432}/${DB_NAME:usersdb}
+    username: "{cipher}1d5d6b1f955819a013eaba27622e3afa4990207caf4182970c770ae57972b7ba"
+    password: "{cipher}4ca8d20fc7f816f4ff276b932ad7c36d05ec3d8ae555066cd57d6f540405c105"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  logging:
+    level:
+      org.springframework: INFO
+      com.yuexin: INFO
